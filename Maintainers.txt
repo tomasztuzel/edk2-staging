@@ -522,6 +522,11 @@ F: RedfishPkg/
 M: Abner Chang <abner.chang@hpe.com> [changab]
 R: Nickle Wang <nickle.wang@hpe.com> [nicklela]
 
+RedfishClientPkg
+F: RedfishClientPkg/
+M: Abner Chang <abner.chang@hpe.com>
+R: Nickle Wang <nickle.wang@hpe.com>
+
 SecurityPkg
 F: SecurityPkg/
 W: https://github.com/tianocore/tianocore.github.io/wiki/SecurityPkg
