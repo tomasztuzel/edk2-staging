@@ -1,6 +1,11 @@
 How to run LibFuzzer in OS?
 ==============
-Install LLVM in Linux
+Install LLVM on Ubuntu
+1)      sudo apt install llvm clang -y
+**NOTE: On Ubuntu, the below is unnecessary. Install LLVM from the repository.
+
+Install LLVM on another Linux OS
+**NOTE: You may use this option, but consider using a release from your repository:
 1)	Download LLVM 8.0.0 Linux pre build binary from http://releases.llvm.org/download.html 
 2)	Extract clang+llvm-x.x.x-<system_info>.tar.xz
 	mv clang+llvm-x.x.x-<system_info>.tar.xz /home/<user name>/Env
@@ -50,11 +55,11 @@ Run LibFuzzer in Linux:
 1)	python edk2-staging/HBFA/UefiHostTestTools/HBFAEnvSetup.py
 2)	cp edk2-staging/HBFA/UefiHostFuzzTestPkg/Conf/build_rule.txt edk2/Conf/build_rule.txt
 3)	cp edk2-staging/HBFA/UefiHostFuzzTestPkg/Conf/tools_def.txt edk2/Conf/tools_def.txt
-4)	export PATH=$CLANG_PATH:$PATH
-5)	build -p UefiHostFuzzTestCasePkg/UefiHostFuzzTestCasePkg.dsc -a X64 -t LIBFUZZER
-6)	mkdir NEW_CORPUS_DIR
-7)	cp HBFA/UefiHostFuzzTestCasePkg/Seed/XXX/Raw/Xxx.bin NEW_CORPUS_DIR
-8)	./Build/UefiHostFuzzTestCasePkg/DEBUG_LIBFUZZER/X64/TestXxx  NEW_CORPUS_DIR -rss_limit_mb=0 -artifact_prefix=<OUTPUT_PATH>/
+4)	build -p UefiHostFuzzTestCasePkg/UefiHostFuzzTestCasePkg.dsc -a X64 -t LIBFUZZER
+5)      export CURRENTTEST=TestUpdateLockBoxFuzzLength && export CURRENTSEED=LockBox/Raw # Example test
+6)	mkdir -p fuzzing/$CURRENTTEST && cd fuzzing/$CURRENTTEST && mkdir -p corpus output
+7)	cp ./edk2-staging/HBFA/UefiHostFuzzTestCasePkg/Seed/$CURRENTSEED/* corpus/ # Raw seeds for this test
+8)      ./Build/UefiHostFuzzTestCasePkg/DEBUG_LIBFUZZER/X64/$CURRENTTEST corpus/ -rss_limit_mb=0 -artifact_prefix=output/
 
 Run Clang in Windows
 1)	python edk2-staging\HBFA\UefiHostTestTools\HBFAEnvSetup.py

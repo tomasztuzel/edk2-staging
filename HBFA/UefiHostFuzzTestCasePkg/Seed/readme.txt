@@ -30,8 +30,9 @@ TestDxeCapsuleLibFmp                       HBFA\UefiHostFuzzTestCasePkg\Seed\Cap
 TestVariableSmm                            HBFA\UefiHostFuzzTestCasePkg\Seed\VariableSmm\Raw
 TestFmpAuthenticationLibPkcs7              HBFA\UefiHostFuzzTestCasePkg\Seed\Capsule
 TestFmpAuthenticationLibRsa2048Sha256      HBFA\UefiHostFuzzTestCasePkg\Seed\Capsule
-TestCapsuePei                              HBFA\UefiHostFuzzTestCasePkg\Seed\Capsule
+TestCapsulePei                             HBFA\UefiHostFuzzTestCasePkg\Seed\Capsule
 TestUpdateLockBoxFuzzLength                HBFA\UefiHostFuzzTestCasePkg\Seed\LockBox\Raw
 TestUpdateLockBoxFuzzOffset                HBFA\UefiHostFuzzTestCasePkg\Seed\LockBox\Raw
 TestFileName                               HBFA\UefiHostFuzzTestCasePkg\Seed\UDF\Raw\FileName
 TestPeiGpt                                 HBFA\UefiHostFuzzTestCasePkg\Seed\Gpt\Raw
+TestIdentifyAtaDevice                      HBFA\UefiHostFuzzTestCasePkg\Seed\Ata\Raw
