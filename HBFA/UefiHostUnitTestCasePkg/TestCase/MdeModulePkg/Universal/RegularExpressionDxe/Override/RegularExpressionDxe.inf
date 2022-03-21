@@ -18,40 +18,42 @@
 [Sources]
   MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe.c
   MdeModulePkg/Universal/RegularExpressionDxe/RegularExpressionDxe.h
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/OnigurumaUefiPort.h
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/OnigurumaUefiPort.c
-  #MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/OnigurumaIntrinsics.c | MSFT
+  #MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/OnigurumaUefiPort.h
+  MdeModulePkg/Universal/RegularExpressionDxe/OnigurumaUefiPort.h
+  #MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/OnigurumaUefiPort.c
+  MdeModulePkg/Universal/RegularExpressionDxe/OnigurumaUefiPort.c
+  #MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/OnigurumaIntrinsics.c | MSFT
 
 # Upstream Oniguruma code
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/onig_init.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/oniguruma.h
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regcomp.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regenc.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regenc.h
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regerror.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regexec.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/oniggnu.h
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/reggnu.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regint.h
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regparse.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regparse.h
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regposerr.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/onigposix.h
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regposix.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regsyntax.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regtrav.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/regversion.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/st.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/st.h
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/onig_init.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/oniguruma.h
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regcomp.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regenc.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regenc.h
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regerror.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regexec.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/oniggnu.h
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/reggnu.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regint.h
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regparse.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regparse.h
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regposerr.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/onigposix.h
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regposix.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regsyntax.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regtrav.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/regversion.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/st.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/st.h
 
 # Supported Character Encodings
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/ascii.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/unicode.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/unicode_fold1_key.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/unicode_fold2_key.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/unicode_fold3_key.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/unicode_unfold_key.c
-  MdeModulePkg/Universal/RegularExpressionDxe/Oniguruma/utf16_le.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/ascii.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold1_key.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold2_key.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_fold3_key.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/unicode_unfold_key.c
+  MdeModulePkg/Universal/RegularExpressionDxe/oniguruma/src/utf16_le.c
 
 [Packages]
   MdePkg/MdePkg.dec
